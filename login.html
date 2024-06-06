@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro - DinoRex</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <!-- Formulario de inicio de sesión -->
+        <div class="form-container" id="login-container">
+            <h1>Iniciar Sesión</h1>
+            <form action="#" method="post">
+                <label for="login-username">Nombre de usuario</label>
+                <input type="text" id="login-username" name="login-username" required>
+                <label for="login-password">Contraseña</label>
+                <input type="password" id="login-password" name="login-password" required>
+                <button type="submit">Iniciar sesión</button>
+                <p class="message">¿No tienes cuenta? <a href="#register-container">Regístrate</a></p>
+            </form>
+        </div>
+        
+        <!-- Formulario de registro -->
+        <div class="form-container" id="register-container">
+            <h1>Regístrate</h1>
+            <form action="#" method="post">
+                <label for="register-username">Nombre de usuario</label>
+                <input type="text" id="register-username" name="register-username" required>
+                <label for="register-password">Contraseña</label>
+                <input type="password" id="register-password" name="register-password" required>
+                <button type="submit">Crear cuenta</button>
+                <p class="message">¿Ya tienes cuenta? <a href="#login-container">Iniciar sesión</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
